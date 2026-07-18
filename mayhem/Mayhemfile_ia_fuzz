@@ -1,0 +1,8 @@
+project: savantenvs/radare2
+target: ia_fuzz
+cmds:
+  - cmd: /mayhem/ia_fuzz
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/ia_fuzz/testsuite
