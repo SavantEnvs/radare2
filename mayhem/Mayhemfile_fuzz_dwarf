@@ -1,0 +1,8 @@
+project: savantenvs/radare2
+target: fuzz_dwarf-mined-558a787
+cmds:
+  - cmd: /mayhem/fuzz_dwarf
+    libfuzzer: true
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_dwarf-mined-558a787/testsuite
